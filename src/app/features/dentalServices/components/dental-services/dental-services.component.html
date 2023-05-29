@@ -1,0 +1,25 @@
+<div class="main-wrapper">
+  <section class="banner-pic">
+    <img src="../../../assets/images/background.png" alt="banner picture" />
+  </section>
+  <section class="services-caption">
+    <h1>Services</h1>
+    <p>
+      We are a full service dental office providing family, restorative, and
+      cosmetic dentistry.
+    </p>
+  </section>
+
+  <section>
+    <app-search (inputValue)="onBlur($event)"></app-search>
+    <div class="services">
+      <ng-container *ngFor="let dentalService of dentalServices">
+        <article class="articles">
+          <app-dental-service
+            [dentalService]="dentalService"
+          ></app-dental-service>
+        </article>
+      </ng-container>
+    </div>
+  </section>
+</div>

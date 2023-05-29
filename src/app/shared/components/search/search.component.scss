@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+.search {
+  position: relative;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.dentalServices-search {
+  width: 100%;
+  height: 3em;
+  border: none;
+  border-radius: 1em;
+  outline: none;
+  padding: 0px 0px 0px 15px;
+  background-color: $lightgray;
+  font-size: 16px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+.dentalServices-search:focus {
+  box-shadow: 0 0 15px $bluegray;
+  background-color: $fieldBackground;
+}
+
+.search {
+  i {
+    position: absolute;
+    top: 0.9em;
+    right: 1em;
+    color: $bluegray;
+  }
+}

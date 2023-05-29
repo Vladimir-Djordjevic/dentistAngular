@@ -1,0 +1,12 @@
+<header class="header-wrapper" appHeaderColor>
+  <img src="../../../../assets/images/logo.png" alt="picture of the banner" />
+  <h3>Dental care group</h3>
+
+  <nav class="navbar">
+    <ul>
+      <li *ngFor="let navbarLink of navbarLinks">
+        <a routerLink="#">{{ navbarLink }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>

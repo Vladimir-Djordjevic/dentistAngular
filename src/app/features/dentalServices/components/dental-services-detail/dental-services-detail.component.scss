@@ -1,0 +1,53 @@
+@import "../../../../styles/variables";
+
+.services-preview {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3em;
+  max-width: 70%;
+  margin-top: 3em;
+  letter-spacing: 1px;
+  color: $darkgray;
+  h1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: $bluegray;
+  }
+}
+
+.reservation-button {
+  border: none;
+  border-radius: 2em;
+  box-shadow: 0 0 15px $shadow;
+  margin: 5em;
+  cursor: pointer;
+}
+
+.reservation-button {
+  a {
+    padding: 2em;
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    color: $darkgray;
+    font-size: 18px;
+    background: linear-gradient(to left, $lightgray 50%, $bluegray 50%) right;
+    background-size: 201%;
+    transition: 0.5s ease-out;
+  }
+}
+.reservation-button :hover {
+  background-color: $bluegray;
+  background-position: left;
+}
+
+.reservation-button {
+  a:hover {
+    color: $white;
+  }
+}
+
+.price {
+  font-weight: 900;
+  font-size: 18px;
+}

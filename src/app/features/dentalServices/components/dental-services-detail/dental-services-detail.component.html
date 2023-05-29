@@ -1,0 +1,10 @@
+<div class="services-preview">
+  <h1>{{ service?.name }}</h1>
+  <img [src]="service?.imgSrc" [alt]="service?.name" />
+  <p>{{ service?.description }}</p>
+  <p class="price">Price:{{ service?.price | currency : "EUR" }}</p>
+</div>
+
+<button class="reservation-button">
+  <a routerLink="/">Make a reservation</a>
+</button>

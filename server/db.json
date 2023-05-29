@@ -1,0 +1,75 @@
+{
+  "services": [
+    {
+      "name": "Teeth Whitening",
+      "description": "Dazzle yourself with a brighter, younger-looking smile. Dental Care Seattle offers teeth whitening that works wonders for your confidence and visual age. When you work with our dentists, you get a teeth whitening result that works for your type of discoloration.Save time and frustration by skipping the store-bought solutions that only offer a generalized approach and a lower concentration of the whitening agent. Zoom! Whitening offers our patients a convenient in-office whitening solution from Dental Care Seattle. In about an hour we can lift stains and reveal a polished new look! Another choice for teeth whitening from our practice is a take-home whitening system. Your dentist creates a custom tray for the whitening gel, and advises you on how often to wear the trays. This method is easy to incorporate into your time at home, while watching TV, reading or unwinding. ",
+      "price": 200,
+      "imgSrc": "assets/images/teeth-whitening.png",
+      "link": "dentalService/1",
+      "id": 1
+    },
+    {
+      "name": "Invisalign",
+      "description": "A beautiful smile is the gateway to expressing your personality and enduring new opportunities. However, many people guard their smiles from the world because of the embarrassment of crooked teeth, and do not want to deal with the hassle of traditional braces. Thanks to advancements in cosmetic dentistry, Invisalign for our patients can straighten teeth comfortably and discreetly in half the time of metal braces. Invisalign are clear, durable plastic retainers gently guiding your teeth to its appropriate alignment while those around you don’t notice you’re receiving orthodontic work. Using Invisalign will provide numerous benefits compared to metal brackets and wires including Your Invisalign treatment will consist of a comprehensive evaluation of your mouth. Then, the doctors will take impressions of your teeth by using 3D imaging technology to customize your aligners. You will receive your smooth aligners, which won’t irritate your teeth or gums. ",
+      "price": 500,
+      "imgSrc": "assets/images/Invisalign.png",
+      "link": "dentalService/2",
+      "id": 2
+    },
+    {
+      "name": "Porcelain Veneers",
+      "description": "A gorgeous smile can have a huge impact on your overall look and demeanor. One way to achieve a show-stopping smile is with porcelain veneers from Dental Care Seattle. Created to establish the perfect form and function for the characteristics of your face, our porcelain veneers are outstanding.As just one facet of life-changing cosmetic work from Dental Care Seattle, our porcelain veneers are created with the technical skills and artistry of a master ceramist. With unmatched precision, the ceramist incorporates a myriad of details into your smile design.By working closely with our patients, we’re able to create the best smile makeovers with well-crafted porcelain veneers. Smiles with our porcelain veneers are custom, beautiful, and appear completely natural.",
+      "price": 700,
+      "imgSrc": "assets/images/porcelain-veneers.png",
+      "link": "dentalService/3",
+      "id": 3
+    },
+    {
+      "name": "Smile Design",
+      "description": "Ideal aesthetics serve more than your looks when you are confident about your smile, you often feel better about yourself and embrace exciting opportunities.Smile design is how the doctors at Dental Care Seattle make veneers or other cosmetic procedures, just for you. No two smiles are the same, and your smile design will enhance your individual characteristics. While patients crave the end result of a harmonious, balanced smile, our doctors’ first priority is to establish healthy strength and function. When teeth and jaws work well together, we can then focus on the beauty of teeth.",
+      "price": 1000,
+      "imgSrc": "assets/images/smile-design.png",
+      "link": "dentalService/4",
+      "id": 4
+    },
+    {
+      "name": "Dental Bonding",
+      "description": "For minor imperfections in a smile, conservative treatments are best. Dental bonding is an affordable and minimally invasive approach to cosmetic dentistry. Bonding is most effective for closing small gaps between teeth or covering chips or cracks in teeth.Bonding can be matched to your existing tooth color, for imperceptible blending. The expert cosmetic dentists at Dental Care Seattle can help you evaluate your best choice for a cosmetic restoration. Every smile is different, so it helps to sit down with one of our dentists to learn which dental restoration will provide your best outcome. Call for your consultation today.",
+      "price": 150,
+      "imgSrc": "assets/images/dental-bonding.png",
+      "link": "dentalService/5",
+      "id": 5
+    },
+    {
+      "name": "Gum Contouring",
+      "description": "Gum contouring reshapes overgrown or misshapen gums. This procedure may be performed in our office with a soft tissue laser or other precision equipment. Our dentists use the most effective anesthetics and topical numbing agents, so you won’t have to worry about your comfort for this dental procedure.",
+      "price": 350,
+      "imgSrc": "assets/images/gum-contouring.png",
+      "link": "dentalService/6",
+      "id": 6
+    }
+  ],
+  "reservations": [
+    {
+      "firstName": "Vladimir",
+      "lastName": "Djordjevic",
+      "serviceId": "3",
+      "dateTime": "20-12-2022 08:06",
+      "id": 1
+    },
+    {
+      "firstName": "Danijela",
+      "lastName": "Nikitin",
+      "serviceId": "1",
+      "dateTime": "7-12-2022 17:09",
+      "id": 2
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Radoman",
+      "serviceId": "5",
+      "dateTime": "5-12-2022 05:18",
+      "id": 3
+    }
+  ]
+}
