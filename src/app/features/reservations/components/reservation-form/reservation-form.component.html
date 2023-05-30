@@ -1,0 +1,117 @@
+<div class="main-form">
+  <h1 class="h1">Create reservation</h1>
+  <ng-container *ngIf="formGroup.invalid && formGroup.dirty">
+    <p class="display-none">
+      Form is not correctly populated
+      <i class="fa-solid fa-circle-exclamation"></i>
+    </p>
+  </ng-container>
+  <form class="reservation-form" [formGroup]="formGroup">
+    <div class="reservaton-inputs">
+      <input
+        type="text"
+        name="first-name"
+        placeholder="First Name"
+        class="first-name"
+        [formControl]="formGroup.controls.firstName"
+      />
+      <ng-container
+        *ngIf="
+          formGroup.controls.firstName.dirty &&
+          formGroup.controls.firstName.errors
+        "
+      >
+        <span class="fa-exclamation error-span"></span>
+      </ng-container>
+    </div>
+
+    <div class="reservaton-inputs">
+      <input
+        type="text"
+        name="last-name"
+        placeholder="Last Name"
+        class="last-name"
+        [formControl]="formGroup.controls.lastName"
+      />
+
+      <ng-container
+        *ngIf="
+          formGroup.controls.lastName.dirty &&
+          formGroup.controls.lastName.errors
+        "
+      >
+        <span class="fa-exclamation error-span"></span>
+      </ng-container>
+    </div>
+
+    <div class="reservaton-inputs">
+      <input
+        type="date"
+        name="date"
+        class="date"
+        [formControl]="formGroup.controls.date"
+      />
+      <ng-container
+        *ngIf="formGroup.controls.date.dirty && formGroup.controls.date.errors"
+      >
+        <span class="fa-exclamation error-span"></span>
+      </ng-container>
+    </div>
+    <div class="reservaton-inputs">
+      <input
+        type="time"
+        name="time"
+        class="time"
+        [formControl]="formGroup.controls.time"
+      />
+      <ng-container
+        *ngIf="formGroup.controls.time.dirty && formGroup.controls.time.errors"
+      >
+        <span class="fa-exclamation error-span"></span>
+      </ng-container>
+    </div>
+    <div class="reservaton-inputs">
+      <select
+        name="services-option"
+        class="services-option"
+        [formControl]="formGroup.controls.select"
+      >
+        <option value="0">Choose Service</option>
+        <option
+          *ngFor="let dentalService of dentalServices"
+          [value]="dentalService.id"
+        >
+          {{ dentalService.name }}
+        </option>
+      </select>
+      <ng-container
+        *ngIf="
+          formGroup.controls.select.dirty && formGroup.controls.select.errors
+        "
+      >
+        <span class="fa-exclamation error-span"></span>
+      </ng-container>
+    </div>
+
+    <p class="form-desc">
+      <i>
+        All fields of the form must be filled! <br />
+        The first name and last name fields can have 30 characters maximum.
+        <br />
+        Must start with upper letter!
+        <br />
+        Special characters are not allowed, and text fields can have 30
+        characters maximum.</i
+      >
+    </p>
+
+    <button
+      type="button"
+      class="add-reservation"
+      [disabled]="formGroup.invalid"
+      (click)="onSubmit()"
+    >
+      Create
+    </button>
+  </form>
+</div>

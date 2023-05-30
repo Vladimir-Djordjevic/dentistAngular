@@ -5,7 +5,7 @@
   <nav class="navbar">
     <ul>
       <li *ngFor="let navbarLink of navbarLinks">
-        <a routerLink="#">{{ navbarLink }}</a>
+        <a [routerLink]="navbarLink.routerPath">{{ navbarLink.name }}</a>
       </li>
     </ul>
   </nav>

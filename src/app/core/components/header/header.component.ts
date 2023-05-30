@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavLinks } from '../../Model/navLinks';
+import { Navlink } from '../../Model/navLink.enum';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  navbarLinks: string[] = ['Home', 'Reservations', 'Login', 'Logout'];
+  navbarLinks: NavLinks[] = [
+    {
+      name: Navlink.HOME,
+      routerPath: '/',
+    },
+    {
+      name: Navlink.RESERVATION,
+      routerPath: 'reservations/reservationTable',
+    },
+    {
+      name: Navlink.LOGIN,
+      routerPath: 'login',
+    },
+    {
+      name: Navlink.LOGOUT,
+      routerPath: 'logout',
+    },
+  ];
 
   constructor() {}
 

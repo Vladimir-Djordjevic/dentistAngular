@@ -3,6 +3,6 @@
     <a [routerLink]="dentalService.link">{{ dentalService.name }}</a>
   </h3>
   <img [src]="dentalService.imgSrc" [alt]="dentalService.name" />
-  <p>{{ dentalService.description | slice : 0 : 50 }}</p>
+  <p>{{ dentalService.description | slice : 0 : 50 }}...</p>
   <p class="price">Price:{{ dentalService.price | currency : "EUR" }}</p>
 </article>

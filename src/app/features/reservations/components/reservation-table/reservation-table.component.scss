@@ -1,0 +1,119 @@
+@import "../../../../styles/variables";
+
+.main-wrapper-reservations {
+  margin: 5%;
+  min-height: 70%;
+  overflow: auto;
+  h1 {
+    font-weight: 900;
+    font-size: 40px;
+    color: $bluegray;
+  }
+}
+
+.main-wrapper-reservations h1 {
+  margin: 1em;
+}
+.reservation-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid $white;
+}
+thead {
+  border-top: 1px solid $white;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 30%);
+}
+
+th {
+  padding: 4px 8px;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+td {
+  text-align: left;
+  height: 60px;
+  padding: 8px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  font-weight: 500;
+  color: $darkgray;
+}
+
+.reservation-table a {
+  color: $bluegray;
+  cursor: pointer;
+}
+
+.reservation-table a:hover {
+  color: $red;
+}
+
+.delete-modal {
+  display: block;
+  position: fixed;
+  transform: translateX(120%);
+  background-color: var(--white);
+  padding: 1.5em;
+  right: 2em;
+  top: 5em;
+  z-index: 1;
+  margin: 2px;
+  color: var(--bluegray);
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 1em;
+  border-left: 8px solid var(--red);
+}
+
+.btn {
+  border: none;
+  border-radius: 2em;
+  box-shadow: 0 0 15px $shadow;
+  margin: 5em;
+  cursor: pointer;
+
+  a {
+    padding: 2em;
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    color: $darkgray;
+    font-size: 18px;
+    background: linear-gradient(to left, $lightgray 50%, $bluegray 50%) right;
+    background-size: 201%;
+    transition: 0.5s ease-out;
+  }
+  a:hover {
+    color: $white;
+  }
+}
+
+.btn :hover {
+  background-color: $bluegray;
+  background-position: left;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 740px) {
+  .main-wrapper-reservations h1 {
+    margin-top: 4em;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 476px) {
+  .h1 {
+    margin-top: 4em;
+  }
+}

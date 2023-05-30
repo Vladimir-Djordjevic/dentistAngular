@@ -1,0 +1,145 @@
+@import "../../../../styles/variables";
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  margin: 4%;
+  border-radius: 1em;
+  padding: 5em;
+  align-items: center;
+  box-shadow: 0 0 15px $shadow;
+  font-size: 20px;
+}
+
+.reservation-form {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  max-width: 30em;
+}
+.main-form {
+  .display-none {
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: 22px;
+    color: $red;
+    background-color: $white;
+  }
+}
+
+.error-message {
+  visibility: hidden;
+}
+
+.reservaton-inputs {
+  width: 100%;
+}
+
+.reservation-form {
+  .first-name {
+    padding: 0.5em;
+    margin-bottom: 2em;
+    font-size: 16px;
+    background-color: $lightgray;
+    border-radius: 5px;
+    width: 85%;
+    border: 1px solid $bluegray;
+    outline: none;
+  }
+  .last-name {
+    padding: 0.5em;
+    margin-bottom: 2em;
+    font-size: 16px;
+    background-color: $lightgray;
+    border-radius: 5px;
+    width: 85%;
+    border: 1px solid $bluegray;
+    outline: none;
+  }
+  .date {
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 2em;
+    background-color: $lightgray;
+    border-radius: 5px;
+    padding: 0.3em;
+    border: 1px solid $bluegray;
+    outline: none;
+  }
+  .time {
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 2em;
+    background-color: $lightgray;
+    border-radius: 5px;
+    padding: 0.3em;
+    border: none;
+    outline: 1px solid $bluegray;
+  }
+  .services-option {
+    font-size: 16px;
+    padding: 0.5em;
+    width: 50%;
+    margin-bottom: 2em;
+    background-color: $lightgray;
+    border-radius: 5px;
+    outline: 1px solid $bluegray;
+    border: none;
+  }
+}
+
+.add-reservation {
+  border: none;
+  box-shadow: 0 0 8px $shadow;
+  padding: 1.2em;
+  margin: 2em;
+  border-radius: 5px;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 18px;
+  width: 10em;
+  background-color: $bluegray;
+  background-position: left;
+  color: $white;
+}
+.add-reservation:focus {
+  background-color: $darkgray;
+  color: $white;
+}
+
+.add-reservation:disabled {
+  background-color: $lightgray;
+  color: $shadow;
+  box-shadow: 0 0 0 $bluegray;
+}
+
+.error-span {
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 900;
+}
+.border-error {
+  border: 1px solid red;
+}
+@media (max-width: 500px) {
+  .main-form p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 476px) {
+  .main-form {
+    min-width: 100%;
+    margin-left: 3px;
+    padding: 0px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 476px) {
+  .h1 {
+    margin-top: 4em;
+  }
+}
