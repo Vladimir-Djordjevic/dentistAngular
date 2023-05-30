@@ -55,17 +55,17 @@ td {
   display: block;
   position: fixed;
   transform: translateX(120%);
-  background-color: var(--white);
+  background-color: $white;
   padding: 1.5em;
   right: 2em;
   top: 5em;
   z-index: 1;
   margin: 2px;
-  color: var(--bluegray);
+  color: $bluegray;
   font-size: 18px;
   font-weight: 900;
   border-radius: 1em;
-  border-left: 8px solid var(--red);
+  border-left: 8px solid $red;
 }
 
 .btn {

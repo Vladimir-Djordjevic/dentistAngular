@@ -1,4 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { Reservation } from '../../Model/reservation';
 import { ReservationService } from '../../services/reservation.service';
 import { DentalServicesService } from 'src/app/features/dentalServices/services/dental-services.service';
@@ -16,6 +22,8 @@ export class ReservationTableComponent implements OnInit, OnDestroy {
   serviceName?: string;
 
   private unsubscribe$: Subject<boolean> = new Subject<boolean>();
+
+  @ViewChild('deleteModal') deleteModal!: ElementRef;
 
   constructor(
     private reservationsService: ReservationService,
@@ -50,6 +58,11 @@ export class ReservationTableComponent implements OnInit, OnDestroy {
       .pipe(
         takeUntil(this.unsubscribe$),
         switchMap((reservation) => {
+          this.deleteModal.nativeElement.style.animation =
+            'animate 3s ease-in-out ';
+          setTimeout(() => {
+            this.deleteModal.nativeElement.style.animation = '';
+          }, 3000);
           console.log(reservation);
           return this.reservationsService.getReservations();
         })
